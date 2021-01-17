@@ -86,6 +86,9 @@
 
     // 5. Add an item to the list; it can say whatever you want.
     $("ol").append($("<li>This is the last item. I added it with jQuery!</li>"));
+
+    // 6. Scratch that; the list is silly. Empty the aside and put a paragraph in it apologizing for the list’s existence.
+    $("aside").empty().append($("<p>", {text: "Sorry for that silly list's existence!"}));
       
       <script>
       </script>

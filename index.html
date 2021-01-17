@@ -89,7 +89,16 @@
 
     // 6. Scratch that; the list is silly. Empty the aside and put a paragraph in it apologizing for the list’s existence.
     $("aside").empty().append($("<p>", {text: "Sorry for that silly list's existence!"}));
-      
+
+      // 7. When you change the numbers in the three inputs on the bottom, the background color of the body should change to match whatever the three values in the inputs are.
+      $(".form-control").on('keyup blur change', function(){
+      let red = $(".form-control").eq(0).val();
+      let blue = $(".form-control").eq(1).val();
+      let green = $(".form-control").eq(2).val();
+      $("body").css("background-color",
+      `rgb(${red}, ${green}, ${blue})`)
+      });
+
       <script>
       </script>
   </body>

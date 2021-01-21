@@ -6,9 +6,11 @@
     <title>Movie Reviews</title>
   </head>
   <body>
-    <h1>Movie Reviews</h1>
-
-    <div id="form">
+    <div class="container">
+      <h1>Movie Reviews</h1>
+    </div>
+    
+    <div class="container" id="form">
       <form id="review-form" method="post">
         <label for="title">Title:</label>
         <input type="text" id="title" name="movie_title">
@@ -21,23 +23,25 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-        <input type="submit" value="Submit" class="button">
+        <input type="submit" value="Submit" class="btn btn-primary btn-sm button">
       </form>
     </div>
 
-    <div id="display-reviews">
-      <table>
-        <thead>
-          <tr>
-            <th>Movie</th>
-            <th>Rating</th>
-          </tr>
-        </thead>
-        <tbody id="reviews-table">
-        </tbody>
-      </table>
+    <div class="container">
+      <div id="display-reviews">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Movie</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody id="reviews-table">
+          </tbody>
+        </table>
+      </div>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
   </body>

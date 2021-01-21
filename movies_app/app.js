@@ -12,7 +12,7 @@ $("#review-form").on("submit", function(event) {
   reviewList[1] = rating;
   reviewList[2] = reviewId;
 
-  let row = $(`<tr><td>${title}</td><td>${rating}</td><td><button class="delete-button">Delete</button></td></tr>"`);
+  let row = $(`<tr><td>${title}</td><td>${rating}</td><td><button class="btn btn-danger btn-small delete-button">Delete</button></td></tr>"`);
   $("#reviews-table").append(row);
   this.reset(); 
 });

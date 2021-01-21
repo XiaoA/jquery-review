@@ -19,7 +19,11 @@ $("#review-form").on("submit", function(event) {
 
 // Delete Review
 $("tbody").on("click", ".delete-button", function(event){
-  let deletedRow = $(this).closest("tr").remove();
-})
+  if (!confirm("Are you sure you want to delete this item?")) {
+    return false;
+  } else {
+    let deletedRow = $(this).closest("tr").remove();
+  }
+});
 
 

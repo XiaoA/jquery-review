@@ -23,7 +23,9 @@ $("#review-form").on("submit", function(event) {
   );
   
   $("#reviews-table").append(row);
-  this.reset(); 
+  this.reset();
+
+  $("input#title").focus();
 });
 
 // Delete Review
